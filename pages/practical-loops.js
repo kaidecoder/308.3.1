@@ -35,7 +35,7 @@ while (i < number + 10) {
   }
   i++;
 }
-//This function will check any number the user enters - for primeness.  Here number represents the (i+1) from line 32
+//This function will check any number the user enters - for primeness.  Here number represents the (i+1) from line 30
 function primeChecker(number) {
   //assume the number is prime(it is truthy) until it isn't
   let primeNumber = number;
@@ -45,11 +45,11 @@ function primeChecker(number) {
     if (number % i === 0) {
       //then it is not a prime number(it is falsy)
       primeNumber = false;
-      //no need to proceed
+      //no need to proceed - don't send it back to the caller
       break;
     }
   }
-  //send the truthy/falsy value from the primeChecker back to what called it
+  //send the truthy value from the primeChecker back to what called it
   return primeNumber;
 }
 
@@ -83,7 +83,7 @@ function grabAllCellsFromACsvString() {
     row8,
     row9,
     row10,
-    row11,
+    row11
   );
 }
 
