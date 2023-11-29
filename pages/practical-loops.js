@@ -71,7 +71,8 @@ function grabAllCellsFromACsvString() {
     loopedCsvString.split("\n");
 
   //output from each row of the string
-  console.log("The rows from the CSV:  ", 
+  console.log(
+    "The rows from the CSV:  ",
     row1,
     row2,
     row3,
